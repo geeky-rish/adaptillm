@@ -1,0 +1,50 @@
+*.iml
+.gradle
+/local.properties
+/.idea/
+/.kotlin/
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+
+# ===== MODEL FILES (large binaries) =====
+*.gguf
+
+# ===== RESEARCH PRIVATE =====
+# Paper draft (unpublished research)
+/paper/
+
+# Research analysis pipeline (unpublished methodology)
+/ml_pipeline/pareto_analysis.py
+/ml_pipeline/visualizations.py
+/ml_pipeline/query_classifier_notebook.py
+/ml_pipeline/pareto_front.png
+/ml_pipeline/pareto_scatter.png
+/ml_pipeline/test_logs.csv
+
+# Experiment data
+adaptillm_logs.csv
+*.csv
+
+# Research documents
+/eispaper.zip
+/proj_doc_1.md
+
+# ===== BUILD ARTIFACTS =====
+*.log
+hs_err_pid*.log
+replay_pid*.log
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.out
+*.synctex.gz
+
+# ===== ML MODEL ARTIFACTS =====
+# Keep tflite in the repo (small, demonstrates ML integration)
+# *.tflite
